@@ -1,0 +1,218 @@
+$tablet: 768px;
+$phone: 375px;
+
+
+body {
+  background-color: #fff;
+  //overflow: hidden;
+
+}
+img {
+  width: 100%;
+  display: block;
+
+  margin-top: 20px;
+  opacity: 95%;
+  filter: brightness(70%);
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Lato Light";
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    opacity: 40%;
+    transition: 300ms ease-in-out;
+  }
+
+}
+
+// DESKTOP.
+.navbar {
+  background-color: black;
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lato Light";
+
+  .menu-item {
+    display: none;
+  }
+
+
+  .logo {
+    font-size: 40px;
+    padding-left: 20px;
+    color: #fff;
+    
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    overflow: hidden;
+
+
+
+    .nav-item {
+      margin-right: 30px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: 300ms ease-in-out;
+        text-align: center;
+
+   
+      }
+    }
+  }
+}
+
+ // TABLET. 
+@media screen and (max-width: $tablet) {
+
+  h1 {
+    top: 30%;
+    left: 50%;
+  }
+
+
+  .navbar {
+
+    // Pie Logo.
+    .logo {
+      font-size: 30px;
+        }
+
+    // Burger.
+    .menu-item {
+      display: block;
+      font-size: 12px;
+      padding-right: 20px;
+      color: #fff;
+    }
+
+    .nav-menu {
+        display: none;
+        right: -100%;
+        overflow: hidden;
+    }
+
+    // When active, show menu.
+    .nav-menu.active {
+    z-index:1;
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    width: 30%;
+    background-color: black;
+    padding: 20px;
+    right: 0;
+    height: 100vh;
+    margin-top: 0;
+    animation: nav-menu-active 300ms ease-in-out;
+    
+    // Add first animation.
+    @keyframes nav-menu-active {
+        0% {opacity: 0;}
+        100%{opacity: 100;}
+    }
+
+    .nav-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        
+    }
+
+    }
+
+  }
+}
+
+// PHONE.
+@media screen and (max-width: $phone) {
+
+  h1 {
+    top: 20%;
+    left: 50%;
+    font-size: 20px;
+  }
+    .navbar {
+  
+      // Pie Logo.
+      .logo {
+        font-size: 20px;
+        padding-left: 10px;
+
+          }
+  
+      // Burger.
+      .menu-item {
+        display: block;
+        font-size: 8px;
+        padding-right: 15px;
+      }
+  
+      .nav-menu {
+          display: none;
+  
+      }
+      // When active, show menu.
+      .nav-menu.active {
+      display: block;
+      flex-direction: column;
+      position: absolute;
+      width: 40%;
+      background-color: black;
+      padding: 20px;
+      right: 0;
+      height: 100vh;
+      margin-top: 0;
+
+  
+  
+      .nav-item:last-child {
+          margin-bottom: 0;
+      }
+  
+      .nav-item {
+          width: 100%;
+          margin-bottom: 15px;
+          text-align: center;
+          font-size: 13px;
+
+      }
+  
+      }
+  
+    }
+  }

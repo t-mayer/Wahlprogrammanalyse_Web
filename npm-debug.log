@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'webpack',
+1 verbose cli   'webpack-cli',
+1 verbose cli   'wepack-dev-server',
+1 verbose cli   '-g' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData webpack
+8 silly fetchPackageMetaData webpack-cli
+9 silly fetchPackageMetaData wepack-dev-server
+10 silly fetchNamedPackageData webpack
+11 silly mapToRegistry name webpack
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/webpack
+15 silly fetchNamedPackageData webpack-cli
+16 silly mapToRegistry name webpack-cli
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/webpack-cli
+20 silly fetchNamedPackageData wepack-dev-server
+21 silly mapToRegistry name wepack-dev-server
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/wepack-dev-server
+25 verbose request uri https://registry.npmjs.org/wepack-dev-server
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 6:02:51 PM
+28 verbose request id aa0df67c1c33269e
+29 http request GET https://registry.npmjs.org/wepack-dev-server
+30 verbose request uri https://registry.npmjs.org/webpack
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 6:02:51 PM
+33 verbose etag W/"0cb833bd2480fe8e38e8960ae0f5d22c"
+34 verbose lastModified Sun, 07 Feb 2021 18:27:41 GMT
+35 http request GET https://registry.npmjs.org/webpack
+36 verbose request uri https://registry.npmjs.org/webpack-cli
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 6:02:51 PM
+39 verbose etag W/"717afb909f0123d561a51b710b0b5fa8"
+40 verbose lastModified Tue, 02 Feb 2021 17:03:59 GMT
+41 http request GET https://registry.npmjs.org/webpack-cli
+42 http 304 https://registry.npmjs.org/webpack
+43 verbose headers { date: 'Fri, 12 Feb 2021 17:02:51 GMT',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'set-cookie':
+43 verbose headers    [ '__cfduid=d0e8bf7c11d51cccf562ef14138a518781613149371; expires=Sun, 14-Mar-21 17:02:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+43 verbose headers   'cf-ray': '6207e1337d470838-CDG',
+43 verbose headers   age: '3319',
+43 verbose headers   'cache-control': 'public, max-age=300',
+43 verbose headers   etag: '"0cb833bd2480fe8e38e8960ae0f5d22c"',
+43 verbose headers   'last-modified': 'Sun, 07 Feb 2021 18:27:41 GMT',
+43 verbose headers   vary: 'Accept-Encoding',
+43 verbose headers   'cf-cache-status': 'HIT',
+43 verbose headers   'cf-request-id': '0838cb1428000008386d9ff000000001',
+43 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+43 verbose headers   server: 'cloudflare' }
+44 silly get cb [ 304,
+44 silly get   { date: 'Fri, 12 Feb 2021 17:02:51 GMT',
+44 silly get     connection: 'keep-alive',
+44 silly get     'set-cookie':
+44 silly get      [ '__cfduid=d0e8bf7c11d51cccf562ef14138a518781613149371; expires=Sun, 14-Mar-21 17:02:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+44 silly get     'cf-ray': '6207e1337d470838-CDG',
+44 silly get     age: '3319',
+44 silly get     'cache-control': 'public, max-age=300',
+44 silly get     etag: '"0cb833bd2480fe8e38e8960ae0f5d22c"',
+44 silly get     'last-modified': 'Sun, 07 Feb 2021 18:27:41 GMT',
+44 silly get     vary: 'Accept-Encoding',
+44 silly get     'cf-cache-status': 'HIT',
+44 silly get     'cf-request-id': '0838cb1428000008386d9ff000000001',
+44 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+44 silly get     server: 'cloudflare' } ]
+45 verbose etag https://registry.npmjs.org/webpack from cache
+46 verbose get saving webpack to /home/tina/.npm/registry.npmjs.org/webpack/.cache.json
+47 http 304 https://registry.npmjs.org/webpack-cli
+48 verbose headers { date: 'Fri, 12 Feb 2021 17:02:51 GMT',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'set-cookie':
+48 verbose headers    [ '__cfduid=d0a0bf0d4d247f7aa9505c41a86571be41613149371; expires=Sun, 14-Mar-21 17:02:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+48 verbose headers   'cf-ray': '6207e133ad58cde3-CDG',
+48 verbose headers   age: '5097',
+48 verbose headers   'cache-control': 'public, max-age=300',
+48 verbose headers   etag: '"717afb909f0123d561a51b710b0b5fa8"',
+48 verbose headers   'last-modified': 'Tue, 02 Feb 2021 17:03:59 GMT',
+48 verbose headers   vary: 'Accept-Encoding',
+48 verbose headers   'cf-cache-status': 'HIT',
+48 verbose headers   'cf-request-id': '0838cb144b0000cde3ec399000000001',
+48 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+48 verbose headers   server: 'cloudflare' }
+49 silly get cb [ 304,
+49 silly get   { date: 'Fri, 12 Feb 2021 17:02:51 GMT',
+49 silly get     connection: 'keep-alive',
+49 silly get     'set-cookie':
+49 silly get      [ '__cfduid=d0a0bf0d4d247f7aa9505c41a86571be41613149371; expires=Sun, 14-Mar-21 17:02:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+49 silly get     'cf-ray': '6207e133ad58cde3-CDG',
+49 silly get     age: '5097',
+49 silly get     'cache-control': 'public, max-age=300',
+49 silly get     etag: '"717afb909f0123d561a51b710b0b5fa8"',
+49 silly get     'last-modified': 'Tue, 02 Feb 2021 17:03:59 GMT',
+49 silly get     vary: 'Accept-Encoding',
+49 silly get     'cf-cache-status': 'HIT',
+49 silly get     'cf-request-id': '0838cb144b0000cde3ec399000000001',
+49 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+49 silly get     server: 'cloudflare' } ]
+50 verbose etag https://registry.npmjs.org/webpack-cli from cache
+51 verbose get saving webpack-cli to /home/tina/.npm/registry.npmjs.org/webpack-cli/.cache.json
+52 http 404 https://registry.npmjs.org/wepack-dev-server
+53 verbose headers { date: 'Fri, 12 Feb 2021 17:02:52 GMT',
+53 verbose headers   'content-type': 'application/json',
+53 verbose headers   'content-length': '21',
+53 verbose headers   connection: 'keep-alive',
+53 verbose headers   'set-cookie':
+53 verbose headers    [ '__cfduid=d6fdd6451b37dde056f9a68396722895b1613149371; expires=Sun, 14-Mar-21 17:02:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+53 verbose headers   'cf-ray': '6207e1333f7e3325-CDG',
+53 verbose headers   vary: 'Accept-Encoding',
+53 verbose headers   'cf-cache-status': 'EXPIRED',
+53 verbose headers   'cf-request-id': '0838cb14030000332590880000000001',
+53 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+53 verbose headers   server: 'cloudflare' }
+54 silly get cb [ 404,
+54 silly get   { date: 'Fri, 12 Feb 2021 17:02:52 GMT',
+54 silly get     'content-type': 'application/json',
+54 silly get     'content-length': '21',
+54 silly get     connection: 'keep-alive',
+54 silly get     'set-cookie':
+54 silly get      [ '__cfduid=d6fdd6451b37dde056f9a68396722895b1613149371; expires=Sun, 14-Mar-21 17:02:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+54 silly get     'cf-ray': '6207e1333f7e3325-CDG',
+54 silly get     vary: 'Accept-Encoding',
+54 silly get     'cf-cache-status': 'EXPIRED',
+54 silly get     'cf-request-id': '0838cb14030000332590880000000001',
+54 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+54 silly get     server: 'cloudflare' } ]
+55 silly fetchPackageMetaData Error: Not found : wepack-dev-server
+55 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+55 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+55 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+55 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+55 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+55 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+55 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+55 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+55 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+55 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+55 silly fetchPackageMetaData  error for wepack-dev-server { Error: Not found : wepack-dev-server
+55 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+55 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+55 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+55 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+55 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+55 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+55 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+55 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+55 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+55 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12) pkgid: 'wepack-dev-server', statusCode: 404, code: 'E404' }
+56 silly rollbackFailedOptional Starting
+57 silly rollbackFailedOptional Finishing
+58 silly runTopLevelLifecycles Starting
+59 silly runTopLevelLifecycles Finishing
+60 silly install printInstalled
+61 verbose stack Error: Not found : wepack-dev-server
+61 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+61 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+61 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+61 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+61 verbose stack     at emitTwo (events.js:126:13)
+61 verbose stack     at Request.emit (events.js:214:7)
+61 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+61 verbose stack     at emitOne (events.js:121:20)
+61 verbose stack     at Request.emit (events.js:211:7)
+61 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+62 verbose statusCode 404
+63 verbose pkgid wepack-dev-server
+64 verbose cwd /home/tina/Desktop/projects/dev2021
+65 error Linux 5.4.0-65-generic
+66 error argv "/usr/bin/node" "/usr/bin/npm" "install" "--save-dev" "webpack" "webpack-cli" "wepack-dev-server" "-g"
+67 error node v8.10.0
+68 error npm  v3.5.2
+69 error code E404
+70 error 404 Not found : wepack-dev-server
+71 error 404
+72 error 404 'wepack-dev-server' is not in the npm registry.
+73 error 404 You should bug the author to publish it (or use the name yourself!)
+74 error 404 Note that you can also install from a
+75 error 404 tarball, folder, http url, or git url.
+76 verbose exit [ 1, true ]
