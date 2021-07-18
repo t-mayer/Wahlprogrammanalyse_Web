@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import Home from './pages/home';
 
 
-// Use react dom object
+// Use react dom object.
 ReactDOM.render(
     <Home title= "this is the title now"></Home>,
 

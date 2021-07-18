@@ -7,7 +7,6 @@ const MinimizeCss = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 // Configure all plugins.
-
 module.exports = {
 
     // the entry point to start
@@ -86,9 +85,9 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        })
+        }),
     ],
-
+   
     // Module to configure sass loader, so webpack can load sass files.
     module: {
 
