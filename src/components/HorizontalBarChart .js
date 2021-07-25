@@ -6,7 +6,7 @@ Chart.register(ChartDataLabels);
 
 
 
-class BarChart extends Component {
+class HorizontalBarChart extends Component {
 
 
     // Use constructor function to be run when component is initialized. 
@@ -24,8 +24,8 @@ class BarChart extends Component {
         displayLegend: true,
         width: 700,
         height: 300,
-        showXAxisLabel: false,
-        displayDataLabels: (screen.width < 575) ? false : true,
+        showXAxisLabel: true,
+        displayDataLabels: true,
         textTitle: 'Länge des Wahlprogramms in Wörtern'
 
     }
@@ -72,7 +72,6 @@ class BarChart extends Component {
         
 
             // Initial update.  
-
             ci.data.datasets[1].hidden = null;
             ci.data.datasets[2].hidden = null;
             ci.data.datasets[3].hidden = null;
@@ -88,7 +87,7 @@ class BarChart extends Component {
     render() {
 
         return(
-            <div className="Barchart">
+            <div className="HorizontalBarchart">
                 <Bar
                 data={this.props.chartData}
                 width={this.props.width}
@@ -108,21 +107,28 @@ class BarChart extends Component {
                             color: 'black',
                             anchor: 'end',
                             align: 'end',
+                            clamp: true,
+
                             formatter: function(value, context) {
                                 return context.dataset.labels[context.dataIndex]; 
                               }
                          }
                     },
                     maintainAspectRatio: false,
+                    indexAxis: 'y', // Horizontal
                     responsive: true,
                     layout: {
-                        padding: 50
+                        padding: {
+                            right: 90,
+                            left: 70,
+                            top: 30,
+                        }
                     },
                     scales: {
                         x: {
-                            display: this.props.showXAxisLabel
+                            display: this.props.showXAxisLabel,
                         }
-                    }
+                    },
                 }}
                 />
             </div>
@@ -132,4 +138,4 @@ class BarChart extends Component {
 
 }
 
-export default BarChart;
+export default HorizontalBarChart;

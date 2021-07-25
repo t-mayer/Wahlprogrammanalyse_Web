@@ -3,7 +3,6 @@ import hero from "../hero.jpg";
 import Navbar from "../components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { DataFetcher } from "../components/DataFetcher";
-import BarChart from "../components/BarChart";
 
 // Define new class: home component.
 export default class Home extends React.Component {
@@ -17,7 +16,7 @@ export default class Home extends React.Component {
             </Switch>
           </Navbar>
           <img src={hero}></img>
-          <h1>Wahlprogrammanalyse</h1>
+          <h1><a href="https://github.com/t-mayer/Wahlprogrammanalyse">Wahlprogrammanalyse</a></h1>
           <div>
           <DataFetcher/>
           </div>
