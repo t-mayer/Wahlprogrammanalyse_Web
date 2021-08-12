@@ -54,6 +54,7 @@ module.exports = {
     devServer: {
         hot: true,
         compress: true,
+        historyApiFallback: true,
 
         // Path to where to look for all the files.
         contentBase: path.join(__dirname, 'dist'),
@@ -70,7 +71,8 @@ module.exports = {
         filename: '[name].bundle.js',
 
         // the distribution folder
-        path : path.resolve(__dirname, 'dist')
+        path : path.resolve(__dirname, 'dist'),
+        //publicPath: '/'
     },
 
     // Array of plugin objects to instantiate.
@@ -112,7 +114,7 @@ module.exports = {
                     },
 
             {
-                test: /\.(png|jpg|gif)$/i,
+                test: /\.(png|jpg|gif|svg)$/i,
                 use: ['url-loader']
             }
         ]

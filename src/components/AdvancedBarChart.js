@@ -4,7 +4,8 @@ import { Chart, Bar } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 Chart.register(ChartDataLabels);
 
-class HorizontalBarChart extends Component {
+class AdvancedBarChart extends Component {
+
   // Use constructor function to be run when component is initialized.
   constructor(props) {
 
@@ -19,15 +20,12 @@ class HorizontalBarChart extends Component {
   static defaultProps = {
     displayLegend: true,
     width: 700,
-    height: 300,
-    showXAxisLabel: true,
+    height: 400,
+    showXAxisLabel: false,
     displayDataLabels: true,
-    paddingLeft: 0,
-    paddingRight: 0,
-    paddingTop: 0,
-    paddingBottom:0
   };
 
+  // Function to collect previous values in an array.
   collectPrevious = (num) => {
     this.previousValue.push(num);
     return this.previousValue;
@@ -67,7 +65,6 @@ class HorizontalBarChart extends Component {
         } else if (meta.hidden === null) {
           meta.hidden = true;
         }
-
         // If it was clicked, then do not hide.
       } else if (datasetIndex === index) {
         if (last === index) {
@@ -78,7 +75,7 @@ class HorizontalBarChart extends Component {
           ci.data.datasets[5].hidden = true;
           ci.data.datasets[0].hidden = true;
           ci.data.datasets[6].hidden = true;
-
+          
         } else {
           meta.hidden = null;
 
@@ -93,12 +90,13 @@ class HorizontalBarChart extends Component {
         }
       }
     });
+
     ci.update();
   };
 
   render() {
     return (
-      <div className="HorizontalBarchart">
+      <div className="AdvancedBarChart">
         <Bar
           data={this.props.chartData}
           width={this.props.width}
@@ -111,8 +109,9 @@ class HorizontalBarChart extends Component {
             plugins: {
               legend: {
                 display: this.props.displayLegend,
-                onClick: this.hideLegend.bind(this.collectPrevious),
+                onClick: this.hideLegend,
               },
+        
               datalabels: {
                 display: this.props.displayDataLabels,
                 color: "black",
@@ -125,20 +124,18 @@ class HorizontalBarChart extends Component {
               },
             },
             maintainAspectRatio: false,
-            indexAxis: "y", // Horizontal
             responsive: true,
             layout: {
-              padding: {
-                right: this.props.paddingRight,
-                left: this.props.paddingLeft,
-                top: this.props.paddingTop,
-                bottom: this.props.paddingBottom,
-              },
+              padding: 30,
+ 
             },
             scales: {
               x: {
                 display: this.props.showXAxisLabel,
               },
+              y:  {
+                  max: 15000
+              }
             },
           }}
         />
@@ -147,4 +144,4 @@ class HorizontalBarChart extends Component {
   }
 }
 
-export default HorizontalBarChart;
+export default AdvancedBarChart;
