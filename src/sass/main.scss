@@ -481,7 +481,7 @@
 }
 
 // PHONE.
-@include media("<=phone") {
+@include media(">600px") {
   body {
     background-color: #212931;
     background-image: linear-gradient(
@@ -490,8 +490,6 @@
       #49433e 400px,
       #212931 800px
     );
-    //background-size: 800px 100%;
-    //background-position: 50% 100%;
     background-repeat: no-repeat;
 
     .diagrams {
@@ -503,7 +501,7 @@
 
     h4 {
       font-family: "Lato Light";
-      font-size: 12px;
+      font-size: 25px;
       color: rgb(39, 37, 37);
       padding: 10px;
       text-align: center;
@@ -517,12 +515,12 @@
       > h4 {
         font-family: "Lato Light";
         color: white;
-        font-size: 12px;
+        font-size: 30px;
         font-weight: bold;
       }
       font-family: "Lato Light";
       color: white;
-      font-size: 10px;
+      font-size: 30px;
       border: 1px solid white;
       text-align: center;
       margin-right: 20px;
@@ -546,7 +544,7 @@
     .contact-details {
       font-family: "Lato Light";
       color: white;
-      font-size: 13px;
+      font-size: 30px;
       border: 1px solid white;
       text-align: center;
       margin-right: 50px;
@@ -565,7 +563,7 @@
         padding-bottom: 10px;
 
         .icon {
-          font-size: 15px;
+          font-size: 40px;
           padding: 20px;
           color: #fff;
           filter: brightness(70%);
@@ -587,7 +585,7 @@
 
     div.BarChart {
       padding: 0;
-      height: 50%;
+      height: 30%;
       width: 100%;
     }
 
@@ -598,8 +596,8 @@
 
     div.AdvancedBarChart {
       padding: 0;
-      height: 50%;
-      width: 100%;
+      height: 30%;
+      width: 90%;
     }
     .intro {
       > p {
@@ -612,7 +610,7 @@
         border-radius: 25px;
         text-align: center;
         border: 5px solid rgb(225, 232, 238);
-        font-size: 10px;
+        font-size: 30px;
 
         &:hover {
           opacity: 70%;
@@ -623,8 +621,8 @@
     }
 
     div.HorizontalBarChart {
-      width: 100%;
-      height: 50%;
+      width: 90%;
+      height: 30%;
       margin-left: 10px;
     }
 
@@ -648,7 +646,7 @@
       cursor: pointer;
       text-decoration: none;
       border: 5px solid rgb(225, 232, 238);
-      font-size: 15px;
+      font-size: 40px;
 
       &:hover {
         background-color: white;
@@ -667,7 +665,7 @@
       font-family: "Lato Light";
 
       .logo {
-        font-size: 20px;
+        font-size: 60px;
         padding-left: 10px;
         color: #fff;
       }
@@ -679,7 +677,7 @@
       // Burger.
       .menu-item {
         display: block;
-        font-size: 8px;
+        font-size: 35px;
         padding-right: 15px;
         color: #fff;
       }
@@ -719,9 +717,8 @@
           width: 100%;
           margin-bottom: 15px;
           text-align: center;
-          font-size: 13px;
           margin-right: 30px;
-          font-size: 15px;
+          font-size: 40px;
           font-weight: 600;
           color: #fff;
           padding-left: 10px;
@@ -741,7 +738,7 @@
 }
 
 // Between phone and tablet.
-@include media(">phone", "<tablet") {
+@include media(">=phone", "<=tablet") {
   .about {
     > h4 {
       font-family: "Lato Light";
