@@ -478,7 +478,7 @@ export function DataFetcher() {
             mostCommonPOS[5][0],
           ],
           hidden: true,
-          label: "Parteiübergreifend: Häufigstes Part-of-Speech-Tag",
+          label: "Parteiübergreifend: Häufigste Wortart",
           labels: [
             mostCommonPOSLabels[0][0],
             "",
@@ -520,7 +520,7 @@ export function DataFetcher() {
             "rgba(26, 26, 26, 0.8)",
           ],
           borderWidth: 1,
-          barThickness: 60
+          barThickness: 30
         },
       ],
     };
